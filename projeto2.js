@@ -27,7 +27,8 @@ function adcionaLinha() {
     const notaAtividade = document.getElementById('nota-atividade')
     if(atividades.includes(nomeAtividade.value)){
         alert(`A Atividade: ${nomeAtividade.value} já foi adcionada!`)
-    }else{
+    }
+    else{
     atividades.push(nomeAtividade.value)
     notas.push(parseFloat(notaAtividade.value))
     let linha = '<tr>'
@@ -52,8 +53,5 @@ function CalculaMediaFinal(){
         somadasnotas += notas[i]
     }
     return somadasnotas / notas.length
-}
-function ValidaAtivExistente(){
-    
 }
 
